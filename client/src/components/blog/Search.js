@@ -27,7 +27,7 @@ const Category = ({
                 {searchLoading && searchedPosts.length <= 0 ? (
                   <Spinner />
                 ) : !searchLoading && searchedPosts.length === 0 ? (
-                  <h2>Sorry results for {`"${match.params.term}"`}</h2>
+                  <h2>Sorry no results for {`"${match.params.term}"`}</h2>
                 ) : (
                   searchedPosts.map(
                     ({

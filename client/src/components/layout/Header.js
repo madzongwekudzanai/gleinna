@@ -12,7 +12,6 @@ const Header = ({ history, logout, auth: { isAuthenticated, loading } }) => {
     setSearch(e.target.value);
   };
   const onSubmit = (e) => {
-    toggleSearch();
     e.preventDefault();
     setSearching(true);
   };
